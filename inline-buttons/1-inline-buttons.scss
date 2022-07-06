@@ -1,0 +1,18 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body{
+    min-height: 100vh;
+    @include center;
+  }
+
+  .frame{
+    @include center;
+    background: #fcc102;
+    height: 20rem;
+    width: 30rem;
+    text-align: center;
+  }
