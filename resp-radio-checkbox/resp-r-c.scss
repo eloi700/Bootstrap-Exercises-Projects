@@ -1,0 +1,25 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body{
+    min-height: 100vh;
+    @include center;
+  }
+
+  .frame{
+    position: relative;
+    @include center;
+    background: #fcc102;
+    height: 20rem;
+    width: 30rem;
+    text-align: center;
+  }
+
+  form{
+    position: absolute;
+    height: 10rem;
+    width: 5rem;
+  }
