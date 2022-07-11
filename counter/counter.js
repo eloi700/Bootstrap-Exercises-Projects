@@ -1,3 +1,44 @@
+// ReactDOM.render(<h1>Hello Everyone</h1>, document.getElementById('root'));
+
+// const root = document.getElementById('root');
+// const header = document.createElement('h1');
+// header.textContent = "I'm learning React - Imperative Way";
+// header.classList.add('header');
+// document.getElementById('root').append(header);
+
+// JSX
+// const page = (
+//   <div>
+//   <h1 className="header">This is JSX</h1>
+//   <p>This is a paragraph</p>
+// </div>
+// )
+
+// ReactDOM.render(
+//  page,
+//   document.getElementById('root')
+// )
+
+import React from "react"
+
+const navBar = (
+  <nav>
+  <h1>My Website</h1>
+  <ul>
+    <li>Pricing</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+  </nav>
+)
+
+ReactDOM.render(
+  navBar, document.getElementById('root')
+)
+
+
+
+
 class Counter extends React.Component {
     constructor(props) {
       super(props);
